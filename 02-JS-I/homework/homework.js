@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1.05;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,9 +28,8 @@ const nuevoModulo = 21 % 5 === 1.05;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return devolverString
-  
-}
+  return str;
+  }
 
 function suma(x, y) {
   // "x" e "y" son números
@@ -69,15 +68,8 @@ function sonIguales(x, y) {
         return false;
     }
         return true;
+}
 
-}
-//Tambien se puede hacer de la siguiente manera
-function sonIguales(x, y) {
-if (x===y) {
-  return true;
-}
-  return false;
-}
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
@@ -85,7 +77,7 @@ function tienenMismaLongitud(str1, str2) {
   if (str1.length===str2.length) {
     return true;
   }
-    return false
+    return false;
   
 }
 
@@ -94,10 +86,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return true ;
+    return true;
   }
-    return false ;
-
+    return false;
 }
 
 function mayorQueCincuenta(num) {
@@ -105,28 +96,28 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num > 50) {
-    return true ;
+    return true;
   }
-    return false ;
+    return false;
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var division = (x % y) ;
-	return division ;
+  var division = (x % y);
+	return division;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var par = (num % 2) ;
+  var par = (num % 2);
 if (par=== 0) {
 
-	return true
+	return true;
 	}
-	return false
+	return false;
 }
 
 function esImpar(num) {
@@ -135,9 +126,9 @@ function esImpar(num) {
   // Tu código:
   var impar = (num % 2) ;
 	if (impar !== 0) {
-return true ;
+return true;
 }
-return false ;
+return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -190,12 +181,11 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero ===0){
     return false
-    }
+  }
     else if (numero >0){
-       return "Es Positivo";
-      
+       return "Es positivo";
     }
-     return "Es Negativo";
+     return "Es negativo";
 }
      
 
@@ -204,7 +194,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + "!"
+  return str + "!";
 }
 
 
@@ -220,24 +210,22 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var saludo = "hola" +" "+ nombre;
-  return saludo;
+    return "Hola" +" "+ nombre +"!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   var area = alto*ancho;
-  return area
-
+  return area;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetro = lado *4
-  return perimetro
+  var perimetro = lado *4;
+  return perimetro;
 }
 
 
@@ -268,10 +256,9 @@ function deEuroAdolar(euro){
 		return "Dato incorrecto";
 }
 	else if (letra == "a" || letra=="e" || letra=="i" || letra=="o" || letra == "u"){ 
-return " bien";
+return "Es vocal";
 }
-	return "mal";
-
+	return "Dato incorrecto";
 }
 
 
