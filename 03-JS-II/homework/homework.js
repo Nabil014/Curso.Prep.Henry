@@ -52,7 +52,7 @@ function saludo(idioma) {
     return "Ni Hao!";
     }
     if (idioma === "ingles"){
-    return "Hello !"
+    return "Hello!"
     }
     return "Hola!"
 }
@@ -67,14 +67,14 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color){
 		case "blue":
-return "this is blue";
+return "This is blue";
 
 		case "red":
-return "this is red";
+return "This is red";
 		case "green":
-return "this is greeen";
+return "This is green";
 		case "orange":
-return "this is orange";
+return "This is orange";
 		default:
 return "Color not found";
 	}
@@ -123,14 +123,14 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   var divisible3Y5 = (numero % 15)
   if (divisible3Y5===0){
-  return "fizzBuzz";
+  return "fizzbuzz";
   }
     var divisible3 = (numero % 3);
   if (divisible3===0){
   return "fizz"}
     var divisible5 = (numero % 5);
   if (divisible5===0){
-  return "Buzz"
+  return "buzz"
   }
   return numero;
   
@@ -150,7 +150,7 @@ function operadoresLogicos(num1, num2, num3) {
     if (num1> num2 && num1 > num3){
        if (num1 >0)
       if ((num1 && num2 && num3)>0)
-    return "Numero 1 es mayor y positivo";
+    return "Número 1 es mayor y positivo";
     }
     if (num3 > num1 && num3>num2){
     if ((num1 && num2 && num3)>0)
@@ -159,7 +159,7 @@ function operadoresLogicos(num1, num2, num3) {
     if (num1 ===0 || num2 ===0 || num3 ===0){
     return "Error"
     }
-    return "false";
+    return false;
 }
 
 function esPrimo(numero) {
@@ -168,15 +168,15 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero ===2) return "true";
-	    for (var i=2 ; i<=numero ; i++){
-  if (numero %i ===0){
-return "false";
+  if (numero === 2) {return false;}
+	if (numero <2) {return false;}
+    for (var i=2 ; i < numero ; i++){
+  if (numero %i === 0){
+return false;
 		  }
-return "true";
-	}
-  if (numero <2) return "false";
-
+    }
+return true;
+	
 }
 
 function esVerdadero(valor){
@@ -184,9 +184,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
     if (valor === true){
-return "soy Verdadero"
+return "Soy verdadero"
   }
-return "soy Falso"
+return "Soy falso"
 }
 
 function tablaDelSeis(){
@@ -204,9 +204,9 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   if (numero >99 && numero < 1000){
-		return "true";
+		return true;
 }
-		return "false";
+		return false;
 }
 
 function doWhile(numero) {
