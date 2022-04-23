@@ -229,8 +229,7 @@ function continueStatement(numero) {
   // Tu código:
   var nuevoArreglo =[];
 	for (var i = 1 ; i < 11 ; i++){
-		
-		if (i===5) continue;
+			if (i===5) continue;
     else {
       numero = numero +2;
       nuevoArreglo.push(numero)}
